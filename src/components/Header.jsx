@@ -4,10 +4,9 @@ import {
   faEnvelope,
   faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {
   faFacebookSquare,
-  faLinkedinIn,
   faTwitterSquare,
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
@@ -66,7 +65,7 @@ export default function Header() {
           </li>
           <li>
             <a href="#">
-              <FontAwesomeIcon icon={faLinkedinIn} style={{ color: "blue" }} />
+              <FontAwesomeIcon icon={faLinkedin} style={{ color: "blue" }} />
             </a>
           </li>
           <li>

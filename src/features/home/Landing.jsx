@@ -1,5 +1,7 @@
-export   default function LandingPage(){
+import Section1 from "./components/Section1";
+
+export default function LandingPage(){
     return <div>
-        {/* home page */}
+        <Section1/>
     </div>
 }
