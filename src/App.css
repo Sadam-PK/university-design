@@ -6,3 +6,12 @@
   height: 100vh;
   width: 100%;
 }
+
+.background2 {
+  background-image: url("./assets/visit1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}

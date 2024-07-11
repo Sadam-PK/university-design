@@ -13,7 +13,10 @@ import {
 
 export default function Header() {
   return (
-    <div className="h-16 flex flex-row justify-center items-center">
+    <div
+      className="h-16 flex flex-row justify-center items-center
+     bg-white top-0 sticky w-full"
+    >
       <div>
         <img src={Logo} alt="Logo" />
       </div>
@@ -41,12 +44,12 @@ export default function Header() {
 
       {/* ----------- contact & social icons --------------- */}
 
-      <div className="flex flex-row">
+      <div className="flex flex-row items-center">
         <a href="#" className="text-emerald-700 font-bold">
           Call Us :
         </a>
         <span className="mr-10">0 (78) 675 3674</span>
-        <ul className="flex flex-row space-x-2">
+        <ul className="flex flex-row space-x-2 text-2xl">
           <li>
             <a href="#">
               <FontAwesomeIcon
