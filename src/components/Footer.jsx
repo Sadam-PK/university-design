@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-b-2 w-full py-8 border-gray-500">
+      <div className="border-b w-full py-8 border-gray-600">
         <p className="relative inset-x-0 -bottom-24 mx-auto w-max text-gray-300 pt-8">
           Copyright ©2024 All rights reserved | This template is made with{" "}
           <FontAwesomeIcon icon={faHeart} className="" /> by{" "}

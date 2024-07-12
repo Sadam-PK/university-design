@@ -1,3 +1,5 @@
+// import Slider from "./Slider";
+
 export default function Section6() {
   return (
     <div className="border-t">
@@ -7,7 +9,10 @@ export default function Section6() {
           Maecenas felis felis, vulputate sit amet mauris et, semper aliquam
           ligula. Integer efficitur tellus metus, sed feugiat leo posuere.
         </p>
-        <div>SLIDER HERE</div>
+        <div>
+          {/*------------ slide---------- */}
+          {/* <Slider/> */}
+        </div>
       </div>
     </div>
   );

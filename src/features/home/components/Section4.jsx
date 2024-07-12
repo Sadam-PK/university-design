@@ -1,11 +1,4 @@
-import { faFortAwesome } from "@fortawesome/free-brands-svg-icons";
-import {
-  faForward,
-  faForwardFast,
-  faForwardStep,
-} from "@fortawesome/free-solid-svg-icons";
-import { faFastForward } from "@fortawesome/free-solid-svg-icons/faFastForward";
-import { faStepForward } from "@fortawesome/free-solid-svg-icons/faStepForward";
+import { faForward } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Section4() {
@@ -23,7 +16,7 @@ export default function Section4() {
 
         <div
           className="flex flex-row border-2 border-gray-200 p-5 mt-5
-         hover:bg-emerald-200"
+         hover:bg-emerald-50 hover:border-transparent group"
         >
           <div className="flex flex-col">
             <h2 className="font-bold">First year students</h2>
@@ -36,14 +29,15 @@ export default function Section4() {
             <FontAwesomeIcon
               icon={faForward}
               className="border-2 border-emerald-500 transition duration-500
-               text-emerald-500 hover:text-white rounded-full p-5 hover:bg-emerald-500"
+               text-emerald-500 group-hover:text-white rounded-full p-5
+                group-hover:bg-emerald-500"
             />
           </div>
         </div>
 
         <div
           className="flex flex-row border-2 border-gray-200 p-5 mt-5
-         hover:bg-emerald-200"
+         hover:bg-emerald-50 hover:border-transparent group"
         >
           <div className="flex flex-col">
             <h2 className="font-bold">Tuition & fees</h2>
@@ -56,14 +50,15 @@ export default function Section4() {
             <FontAwesomeIcon
               icon={faForward}
               className="border-2 border-emerald-500 transition duration-500
-               text-emerald-500 hover:text-white rounded-full p-5 hover:bg-emerald-500"
+               text-emerald-500 group-hover:text-white rounded-full p-5
+                group-hover:bg-emerald-500"
             />
           </div>
         </div>
 
         <div
           className="flex flex-row border-2 border-gray-200 p-5 mt-5
-         hover:bg-emerald-200"
+         hover:bg-emerald-50 hover:border-transparent group"
         >
           <div className="flex flex-col">
             <h2 className="font-bold">International students</h2>
@@ -76,7 +71,8 @@ export default function Section4() {
             <FontAwesomeIcon
               icon={faForward}
               className="border-2 border-emerald-500 transition duration-500
-               text-emerald-500 hover:text-white rounded-full p-5 hover:bg-emerald-500"
+              text-emerald-500 group-hover:text-white rounded-full p-5
+               group-hover:bg-emerald-500"
             />
           </div>
         </div>
