@@ -15,7 +15,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/Sadam-PK/design-project.git
+   git clone https://github.com/Sadam-PK/university-design.git
    ```
 2. Install packages
     ```sh
