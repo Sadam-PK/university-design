@@ -2,7 +2,7 @@ import classImage1 from "../../../assets/class-img1.jpg";
 import classImage2 from "../../../assets/class-img2.jpg";
 import classImage3 from "../../../assets/class-img3.jpg";
 
-export default function Section5() {
+export default function Section4() {
   return (
     <div className="px-16 py-20">
       <div className="flex flex-row justify-between py-7 items-center">

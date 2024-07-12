@@ -18,25 +18,27 @@ export default function Header() {
      bg-white top-0 sticky w-full"
     >
       <div>
-        <img src={Logo} alt="Logo" />
+        <a href="/">
+          <img src={Logo} alt="Logo" />
+        </a>
       </div>
       <div className="px-16">
         <nav>
           <ul className="flex space-x-6 font-bold text-gray-500">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="#">Programs</a>
+              <a href="/programs">Programs</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="/blog">Blog</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </nav>
