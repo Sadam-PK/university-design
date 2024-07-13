@@ -50,7 +50,7 @@ export default function Header() {
         <a href="#" className="text-emerald-700 font-bold">
           Call Us :
         </a>
-        <span className="mr-10">0 (78) 675 3674</span>
+        <span className="ml-2 mr-10">0 (78) 675 3674</span>
         <ul className="flex flex-row space-x-2 text-2xl">
           <li>
             <a href="#">

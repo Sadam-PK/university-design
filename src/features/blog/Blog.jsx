@@ -1,7 +1,11 @@
+import Secton1 from "./components/Section1";
+import Secton2 from "../blog/components/Section2";
+
 export default function Blog(){
     return (
         <div>
-            blog
+            <Secton1/>
+            <Secton2/>
         </div>
     )
 }

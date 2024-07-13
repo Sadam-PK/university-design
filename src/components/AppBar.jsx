@@ -31,7 +31,7 @@ export default function AppBar() {
         </div>
       </div>
 
-      <div>
+      <div className="">
         <a href="#" className="text-white underline">
           Learn More
         </a>
