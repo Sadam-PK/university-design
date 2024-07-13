@@ -9,6 +9,7 @@ import Contact from "./features/contact/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AppBar from "./components/AppBar";
+import BlogDetails from "./features/blogdetails/BlogDetails";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/programs" element={<Program />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blogdetails" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

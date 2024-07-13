@@ -1,4 +1,4 @@
-import Secton1 from "./components/Section1";
+import Secton1 from "../blog/components/Section1";
 import Secton2 from "../blog/components/Section2";
 
 export default function Blog(){

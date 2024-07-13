@@ -58,3 +58,12 @@
   height: 55vh;
   width: 100%;
 }
+
+
+.background8 {
+  background-image: url("./assets/h1_hero1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55vh;
+  width: 100%;
+}

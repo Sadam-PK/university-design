@@ -32,7 +32,7 @@ export default function AppBar() {
       </div>
 
       <div className="">
-        <a href="#" className="text-white underline">
+        <a href="#" className="text-white border-b-2 pb-2 font-medium">
           Learn More
         </a>
       </div>
