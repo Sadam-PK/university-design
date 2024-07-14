@@ -10,19 +10,24 @@ import {
   faTwitterSquare,
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
       className="h-16 flex flex-row justify-center items-center
-     bg-white top-0 sticky w-full"
+       bg-white top-0 sticky w-full z-50"
+      aria-orientation="vertical"
+      aria-labelledby="menu-button"
     >
       <div>
         <a href="/">
           <img src={Logo} alt="Logo" />
         </a>
       </div>
-      <div className="px-16">
+      <div className="px-16 relative">
         <nav>
           <ul className="flex space-x-6 font-bold text-gray-500">
             <li className="hover:text-emerald-600">
@@ -34,8 +39,50 @@ export default function Header() {
             <li className="hover:text-emerald-600">
               <a href="/programs">Programs</a>
             </li>
-            <li className="hover:text-emerald-600">
-              <a href="/blog">Blog</a>
+            <li
+              className="hover:text-emerald-600 relative"
+              onMouseEnter={() => setIsOpen(true)}
+              onMouseLeave={() => setIsOpen(false)}
+            >
+              <a href="/blog" className="pb-7">
+                Blog
+              </a>
+              {isOpen && (
+                <div
+                  className="absolute top-11 w-28 bg-white z-50"
+                  role="menu"
+                  onMouseEnter={() => setIsOpen(true)}
+                  onMouseLeave={() => setIsOpen(false)}
+                >
+                  <div className="py-1" role="none">
+                    <a
+                      href="/blog/"
+                      className="block px-4 py-2 text-sm
+                       text-gray-700 hover:bg-gray-100
+                        hover:text-emerald-700"
+                      role="menuitem"
+                    >
+                      Blog
+                    </a>
+                    <a
+                      href="/blogdetails"
+                      className="block px-4 py-2 text-sm text-gray-700
+                       hover:bg-gray-100  hover:text-emerald-700"
+                      role="menuitem"
+                    >
+                      Blog Details
+                    </a>
+                    <a
+                      href="/blogdetails"
+                      className="block px-4 py-2 text-sm text-gray-700
+                       hover:bg-gray-100  hover:text-emerald-700"
+                      role="menuitem"
+                    >
+                      Elements
+                    </a>
+                  </div>
+                </div>
+              )}
             </li>
             <li className="hover:text-emerald-600">
               <a href="/contact">Contact</a>
