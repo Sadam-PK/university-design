@@ -25,19 +25,19 @@ export default function Header() {
       <div className="px-16">
         <nav>
           <ul className="flex space-x-6 font-bold text-gray-500">
-            <li>
+            <li className="hover:text-emerald-600">
               <a href="/">Home</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-600">
               <a href="/about">About</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-600">
               <a href="/programs">Programs</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-600">
               <a href="/blog">Blog</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-600">
               <a href="/contact">Contact</a>
             </li>
           </ul>

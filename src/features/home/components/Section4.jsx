@@ -1,12 +1,11 @@
-import { faForward } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/free-solid-svg-icons/faForward";
 
 export default function Section4() {
   return (
     <div className="flex flex-row bg-emerald-50 box-border">
       {/* ---------- left side of section */}
       <div className="px-10 w-full bg-emerald-50">
-        <h2 className="py-10 font-bold text-4xl text-gray-800">
+        <h2 className="py-7 font-bold text-4xl text-gray-800">
           ESSENTIAL RESOURCES
         </h2>
         <p className="text-lg text-gray-500">
@@ -17,7 +16,7 @@ export default function Section4() {
         {/* ---------- mini divs ----------- */}
 
         <div
-          className="flex flex-row border border-gray-300 p-5 mt-5
+          className="flex flex-row border border-gray-300 px-5 py-5 mt-5
          hover:bg-emerald-50 hover:border-transparent group"
         >
           <div className="flex flex-col">
@@ -28,12 +27,13 @@ export default function Section4() {
             </p>
           </div>
           <div className="w-20 h-auto flex justify-center items-center">
-            <FontAwesomeIcon
-              icon={faForward}
+            <p
               className="border border-emerald-700 transition duration-500
-               text-emerald-700 group-hover:text-white rounded-full p-5
-                group-hover:bg-emerald-700"
-            />
+               text-emerald-700 group-hover:text-white rounded-full
+                group-hover:bg-emerald-700 font-light px-5 py-4"
+            >
+              ＞
+            </p>
           </div>
         </div>
 
@@ -49,12 +49,13 @@ export default function Section4() {
             </p>
           </div>
           <div className="w-20 h-auto flex justify-center items-center">
-            <FontAwesomeIcon
-              icon={faForward}
+            <p
               className="border border-emerald-700 transition duration-500
-               text-emerald-700 group-hover:text-white rounded-full p-5
-                group-hover:bg-emerald-700"
-            />
+               text-emerald-700 group-hover:text-white rounded-full
+                group-hover:bg-emerald-700 font-light px-5 py-4"
+            >
+              ＞
+            </p>
           </div>
         </div>
 
@@ -70,17 +71,18 @@ export default function Section4() {
             </p>
           </div>
           <div className="w-20 h-auto flex justify-center items-center">
-            <FontAwesomeIcon
-              icon={faForward}
+            <p
               className="border border-emerald-700 transition duration-500
-              text-emerald-700 group-hover:text-white rounded-full p-5
-               group-hover:bg-emerald-700"
-            />
+               text-emerald-700 group-hover:text-white rounded-full
+                group-hover:bg-emerald-700 font-light px-5 py-4"
+            >
+              ＞
+            </p>
           </div>
         </div>
       </div>
       {/* ------ background ------- */}
-      <div className="background2 bg-emerald-50"/>
+      <div className="background2 bg-emerald-50" />
     </div>
   );
 }

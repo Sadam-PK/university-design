@@ -8,7 +8,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import { faHeart } from "@fortawesome/free-regular-svg-icons/faHeart";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
@@ -94,7 +94,7 @@ export default function Footer() {
       <div className="border-b w-full py-8 border-gray-600">
         <p className="relative inset-x-0 -bottom-24 mx-auto w-max text-gray-300 pt-8">
           Copyright ©2024 All rights reserved | This template is made with{" "}
-          <FontAwesomeIcon icon={faHeart} className="" /> by{" "}
+          <FontAwesomeIcon icon={faHeart} className="text-emerald-700" /> by{" "}
           <a href="#" className="text-emerald-600">
             Colorlib
           </a>
