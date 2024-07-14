@@ -5,7 +5,7 @@ export default function AppBar() {
         <ul>
           <li className="list-none text-gray-200 justify-center 
           items-center text-lg">
-            <span className="text-emerald-500 mx-3">ENDS TOMORROW:</span>Join
+            <span className="text-emerald-400 mx-3">ENDS TOMORROW:</span>Join
             Teachable for $4,800 in bonus content
           </li>
         </ul>
@@ -13,7 +13,7 @@ export default function AppBar() {
 
       {/* ----------------- time section -------------- */}
 
-      <div className="grid grid-cols-4 pl-24 pr-10 gap-5 text-emerald-600">
+      <div className="grid grid-cols-4 pl-24 pr-10 gap-5 text-emerald-400">
         <div className="flex flex-col items-center font-bold text-xl">
           <span>30</span>{" "}
           <p className="text-gray-400 font-light text-sm">Days</p>
