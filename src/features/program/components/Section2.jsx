@@ -17,6 +17,7 @@ export default function Section2() {
       </div>
 
       {/*------------ sub divs------ */}
+      
       <div className="px-3 sm:px-0 flex flex-col sm:flex-row justify-center gap-5">
         <div className="to-blue-400 p-5 border-gray-200 border-2">
           <div>
@@ -31,7 +32,7 @@ export default function Section2() {
               vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
               sit amet condimentum.
             </p>
-            <a href="#" className="underline text-emerald-600">
+            <a href="#" className="underline text-emerald-600 py-3">
               Learn More
             </a>
           </div>
@@ -49,7 +50,7 @@ export default function Section2() {
               vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
               sit amet condimentum.
             </p>
-            <a href="#" className="underline text-emerald-600">
+            <a href="#" className="underline text-emerald-600 py-3">
               Learn More
             </a>
           </div>
@@ -72,7 +73,7 @@ export default function Section2() {
               vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
               sit amet condimentum.
             </p>
-            <a href="#" className="underline text-emerald-600">
+            <a href="#" className="underline text-emerald-600 py-3">
               Learn More
             </a>
           </div>
@@ -90,7 +91,7 @@ export default function Section2() {
               vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
               sit amet condimentum.
             </p>
-            <a href="#" className="underline text-emerald-600">
+            <a href="#" className="underline text-emerald-600 py-3">
               Learn More
             </a>
           </div>
