@@ -5,16 +5,19 @@ import blog4 from "../../../assets/blog4.jpg.webp";
 
 export default function Section2() {
   return (
-    <div className="w-10/12 flex flex-col justify-between  mx-auto py-10">
-      <div className="w-8/12  mx-auto text-center text-gray-600 py-10">
-        <h2 className="font-bold text-4xl py-5">PROGRAMS WE OFFER</h2>
-        <p className="font-bold">
+    <div className="sm:w-10/12 flex flex-col justify-between  mx-auto py-5 sm:py-10">
+      <div className="px-5 sm:px-0 sm:w-8/12  mx-auto text-center
+       text-gray-600 pb-5 sm:py-10">
+        <h2 className="font-bold text-xl sm:text-4xl py-5">PROGRAMS WE OFFER</h2>
+        <p className="">
           Maecenas felis felis, vulputate sit amet mauris et, semper aliquam
           ligula. Integer efficitur tellus metus, sed feugiat leo posuere ac.
           Morbi vitae tincidunt mi, et malesuada massa.
         </p>
       </div>
-      <div className="flex flex-row justify-center gap-5">
+
+      {/*------------ sub divs------ */}
+      <div className="px-3 sm:px-0 flex flex-col sm:flex-row justify-center gap-5">
         <div className="to-blue-400 p-5 border-gray-200 border-2">
           <div>
             <img src={blog1} alt="" width="" />
@@ -55,7 +58,7 @@ export default function Section2() {
 
       <div className="h-6"/>
 
-      <div className="flex flex-row justify-center gap-5">
+      <div className="px-3 sm:px-0 flex flex-col sm:flex-row justify-center gap-5">
         <div className="to-blue-400 p-5 border-gray-200 border-2">
           <div>
             <img src={blog3} alt="" width="" />
@@ -93,6 +96,7 @@ export default function Section2() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
