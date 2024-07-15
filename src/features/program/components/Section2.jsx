@@ -9,7 +9,7 @@ export default function Section2() {
       <div className="px-5 sm:px-0 sm:w-8/12  mx-auto text-center
        text-gray-600 pb-5 sm:py-10">
         <h2 className="font-bold text-xl sm:text-4xl py-5">PROGRAMS WE OFFER</h2>
-        <p className="">
+        <p className="text-pretty">
           Maecenas felis felis, vulputate sit amet mauris et, semper aliquam
           ligula. Integer efficitur tellus metus, sed feugiat leo posuere ac.
           Morbi vitae tincidunt mi, et malesuada massa.
@@ -23,7 +23,7 @@ export default function Section2() {
           <div>
             <img src={blog1} alt="" width="" />
           </div>
-          <div className="flex flex-col p-5">
+          <div className="flex flex-col py-5">
             <h2 className=" text-gray-700 hover:text-emerald-600 font-bold text-xl">
               Facilty of Science
             </h2>
@@ -41,7 +41,7 @@ export default function Section2() {
           <div>
             <img src={blog2} alt="" width="" />
           </div>
-          <div className="flex flex-col p-5">
+          <div className="flex flex-col py-5">
             <h2 className=" text-gray-700 hover:text-emerald-600 font-bold text-xl">
               Faculty of Arts
             </h2>
@@ -64,7 +64,7 @@ export default function Section2() {
           <div>
             <img src={blog3} alt="" width="" />
           </div>
-          <div className="flex flex-col p-5">
+          <div className="flex flex-col py-5">
             <h2 className=" text-gray-700 hover:text-emerald-600 font-bold text-xl">
               Facilty of Science
             </h2>
@@ -82,7 +82,7 @@ export default function Section2() {
           <div>
             <img src={blog4} alt="" width="" />
           </div>
-          <div className="flex flex-col p-5">
+          <div className="flex flex-col py-5">
             <h2 className=" text-gray-700 hover:text-emerald-600 font-bold text-xl">
               Faculty of Arts
             </h2>

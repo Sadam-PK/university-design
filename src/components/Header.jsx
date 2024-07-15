@@ -16,7 +16,8 @@ import Logo from "./Logo";
 export default function Header() {
   return (
     <div
-      className="h-16 flex flex-row py-10 sm:py-0 justify-between sm:justify-center items-center
+      className="h-16 flex flex-row py-10 sm:py-0 justify-between 
+      sm:justify-center items-center
        bg-white top-0 sticky w-full z-50"
       aria-orientation="vertical"
       aria-labelledby="menu-button"

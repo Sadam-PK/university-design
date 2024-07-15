@@ -4,7 +4,7 @@ export default function Section4() {
   return (
     <div className="sm:flex sm:flex-row py-0 sm:py-0">
       {/* ---------- left side of section */}
-      <div className="px-5 sm:px-10 p-10 sm:py-0 sm:px-30 w-full bg-emerald-50">
+      <div className="px-5 sm:px-10 p-10 sm:py-0 sm:px-30 w-full bg-gray-50">
         <h2 className="py-7 font-bold text-xl sm:text-4xl text-gray-800">
           ESSENTIAL RESOURCES
         </h2>

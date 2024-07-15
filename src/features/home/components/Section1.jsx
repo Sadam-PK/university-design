@@ -15,7 +15,7 @@ export default function Section1() {
         </p>
         <a
           href="#"
-          className="bg-gradient-to-tr from-emerald-700 to-emerald-900 p-5
+          className="bg-gradient-to-tr from-emerald-600 to-emerald-700 p-5
            hover:bg-blue-500 border-white hover:border hover:bg-gradient-to-bl
             hover:to-gray-800 hover:from-white text-white"
         >

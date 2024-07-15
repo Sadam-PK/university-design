@@ -238,7 +238,7 @@ export default function Section2() {
         {/* ---- input componenet ------- */}
         <div
           className="flex justify-center h-24 bg-gray-50 mx-auto 
-        sm:px-3 py-3 items-center"
+        sm:px-9 py-3 items-center"
         >
           <input
             type="text"

@@ -3,7 +3,7 @@ import blog2 from "../../../assets/blog2.jpg";
 
 export default function Section3() {
   return (
-    <div className="sm:w-10/12 flex flex-col justify-between  mx-auto sm:py-10">
+    <div className="sm:w-10/12 flex flex-col justify-between  mx-auto sm:py-10 mb-10 sm:mb-0">
       <div className="sm:w-8/12  sm:mx-auto text-center text-gray-600 py-10 px-5">
         <h2 className="font-bold text-gray-600 text-xl sm:text-4xl py-5">
           PROGRAMS WE OFFER
