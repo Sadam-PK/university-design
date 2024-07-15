@@ -1,7 +1,6 @@
-import Logo from "../assets/logo.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
+  // faEnvelope,
   faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
@@ -10,90 +9,25 @@ import {
   faTwitterSquare,
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import Menu from "./Menu";
+import WebMenu from "./Web-Menu";
+import Logo from "./Logo";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div
-      className="h-16 flex flex-row justify-center items-center
+      className="h-16 flex flex-row py-10 sm:py-0 justify-between sm:justify-center items-center
        bg-white top-0 sticky w-full z-50"
       aria-orientation="vertical"
       aria-labelledby="menu-button"
     >
-      <div>
-        <a href="/">
-          <img src={Logo} alt="Logo" />
-        </a>
-      </div>
-      <div className="px-16 relative">
-        <nav>
-          <ul className="flex space-x-6 font-bold text-gray-500">
-            <li className="hover:text-emerald-600">
-              <a href="/">Home</a>
-            </li>
-            <li className="hover:text-emerald-600">
-              <a href="/about">About</a>
-            </li>
-            <li className="hover:text-emerald-600">
-              <a href="/programs">Programs</a>
-            </li>
-            <li
-              className="hover:text-emerald-600 relative"
-              onMouseEnter={() => setIsOpen(true)}
-              onMouseLeave={() => setIsOpen(false)}
-            >
-              <a href="/blog" className="pb-7">
-                Blog
-              </a>
-              {isOpen && (
-                <div
-                  className="absolute top-11 w-28 bg-white z-50"
-                  role="menu"
-                  onMouseEnter={() => setIsOpen(true)}
-                  onMouseLeave={() => setIsOpen(false)}
-                >
-                  <div className="py-1" role="none">
-                    <a
-                      href="/blog/"
-                      className="block px-4 py-2 text-sm
-                       text-gray-700 hover:bg-gray-100
-                        hover:text-emerald-700"
-                      role="menuitem"
-                    >
-                      Blog
-                    </a>
-                    <a
-                      href="/blogdetails"
-                      className="block px-4 py-2 text-sm text-gray-700
-                       hover:bg-gray-100  hover:text-emerald-700"
-                      role="menuitem"
-                    >
-                      Blog Details
-                    </a>
-                    <a
-                      href="/blogdetails"
-                      className="block px-4 py-2 text-sm text-gray-700
-                       hover:bg-gray-100  hover:text-emerald-700"
-                      role="menuitem"
-                    >
-                      Elements
-                    </a>
-                  </div>
-                </div>
-              )}
-            </li>
-            <li className="hover:text-emerald-600">
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Logo />
+      <WebMenu />
+      <Menu />
 
       {/* ----------- contact & social icons --------------- */}
 
-      <div className="flex flex-row items-center">
+      <div className="sm:flex flex-row items-center sm:visible hidden">
         <a href="#" className="text-emerald-700 font-bold">
           Call Us :
         </a>

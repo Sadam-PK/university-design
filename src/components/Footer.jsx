@@ -12,15 +12,14 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
-    <div
-      className="bg-gray-700  flex flex-col items-center py-20 px-32"
-      style={{ height: 503 }}
-    >
-      <div className="grid grid-cols-12 gap-2 text-gray-300">
+    <div className="bg-gray-700 flex flex-col items-center p-3 py-20 sm:px-32">
+      <div className="grid sm:grid-cols-12 gap-2 text-gray-300 py-5 border-b border-gray-500">
+
         <div className="col-span-3">
           <img src={universityLogo} alt="" />
         </div>
-        <div className="col-span-2 leading-10">
+
+        <div className="col-span-2 leading-10 pb-10">
           <h4 className="text-white font-bold pb-3">Quick Links</h4>
           <ul className="">
             <li>Work</li>
@@ -29,7 +28,8 @@ export default function Footer() {
             <li>Tips & Tricks</li>
           </ul>
         </div>
-        <div className="col-span-2 leading-10">
+
+        <div className="col-span-2 leading-10 pb-10">
           <h4 className="text-white font-bold pb-3">Programs</h4>
           <ul>
             <li>Air freight</li>
@@ -37,7 +37,8 @@ export default function Footer() {
             <li>Large projects</li>
           </ul>
         </div>
-        <div className="col-span-2 leading-10">
+
+        <div className="col-span-2 leading-10 pb-10">
           <h4 className="text-white font-bold pb-3">Resources</h4>
           <ul>
             <li>FAQs</li>
@@ -45,7 +46,9 @@ export default function Footer() {
             <li>Contact Us</li>
           </ul>
         </div>
-        <div className="col-span-3 ">
+
+        {/* ---------newsletter ---------- */}
+        <div className="col-span-3 flex flex-col pb-5">
           <div>
             <h4 className="pb-3 text-white font-bold leading-10">Newsletter</h4>
             <p className="py-4">Subscribe newsletter to get updates.</p>
@@ -59,7 +62,7 @@ export default function Footer() {
                 className="p-3 w-full"
               />
             </div>
-            <div className="w-20 flex justify-center">
+            <div className="w-20 flex sm:flex-row justify-center">
               <button>
                 <img src={sendButton} alt="send button" className="" />
               </button>
@@ -91,8 +94,14 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-b w-full py-8 border-gray-600">
-        <p className="relative inset-x-0 -bottom-24 mx-auto w-max text-gray-300 pt-8">
+
+      {/* -------copyright section-------- */}
+
+      <div
+        className=" flex  sm:flex-col
+         py-8 text-center"
+      >
+        <p className="text-gray-300 pt-8">
           Copyright ©2024 All rights reserved | This template is made with{" "}
           <FontAwesomeIcon icon={faHeart} className="text-emerald-700" /> by{" "}
           <a href="#" className="text-emerald-600">

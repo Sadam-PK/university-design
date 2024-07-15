@@ -1,13 +1,15 @@
 export default function Section1() {
   return (
-    <div className="background1  relative grid grid-cols-2">
-      <div className="absolute inset-0 bg-gray-600 opacity-30" />
-      <div className="w-10/12  py-52  ml-32 text-white relative">
-        <span className="font-bold text-2xl mb-5">EDUCATION & SCHOOL</span>
-        <h1 className="font-bold text-5xl py-5 leading-tight">
+    <div className="background1 relative sm:grid grid-cols-2 sm:h-screen h-[70vh]">
+      <div className="absolute inset-0 bg-gray-600 opacity-30 " />
+      <div className="sm:w-10/12  py-40 pl-4 pr-3 sm:ml-32  text-white relative">
+        <span className="sm:font-bold text-xl sm:text-2xl sm:mb-5">
+          EDUCATION & SCHOOL
+        </span>
+        <h1 className="font-bold text-xl sm:text-5xl py-5 leading-tight">
           SHOWCASE COURSES, EVENTS AND MORE!
         </h1>
-        <p className="mb-10">
+        <p className="mb-10 text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique.
         </p>
@@ -20,7 +22,6 @@ export default function Section1() {
           Get Started Now
         </a>
       </div>
-      <div></div>
     </div>
   );
 }
