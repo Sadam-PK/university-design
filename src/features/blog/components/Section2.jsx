@@ -20,15 +20,15 @@ import Pagination from "../../../components/Pagination";
 
 export default function Section2() {
   return (
-    <div className="grid grid-cols-12 px-28 py-20 gap-10">
+    <div className="sm:grid sm:grid-cols-12 sm:px-28 py-20 sm:gap-10">
       {/* ------ left side ---------- */}
       <div className="col-span-8 -z-10">
         <div className="col-span-8">
           <div className="relative">
             <img src={singleBlog1} alt="" className="" />
             <div
-              className="px-8 py-5 h-auto bg-emerald-700 absolute -bottom-5
-            flex justify-center rounded-lg text-center ml-10"
+              className="px-6 sm:px-8 py-2 sm:py-5 h-auto bg-emerald-700 absolute -bottom-5
+            flex justify-center rounded-lg text-center ml-3  sm:ml-10"
             >
               <a href="#" className=" text-white">
                 <h3 className="font-bold text-3xl">15</h3>
@@ -69,8 +69,8 @@ export default function Section2() {
           <div className="relative">
             <img src={singleBlog2} alt="" className="" />
             <div
-              className="px-8 py-5 h-auto bg-emerald-700 absolute -bottom-5
-            flex justify-center rounded-lg text-center ml-10"
+              className="px-6 sm:px-8 py-2 sm:py-5 h-auto bg-emerald-700 absolute -bottom-5
+            flex justify-center rounded-lg text-center ml-3  sm:ml-10"
             >
               <a href="#" className=" text-white">
                 <h3 className="font-bold text-3xl">15</h3>
@@ -110,8 +110,8 @@ export default function Section2() {
           <div className="relative">
             <img src={singleBlog3} alt="" className="" />
             <div
-              className="px-8 py-5 h-auto bg-emerald-700 absolute -bottom-5
-            flex justify-center rounded-lg text-center ml-10"
+              className="px-6 sm:px-8 py-2 sm:py-5 h-auto bg-emerald-700 absolute -bottom-5
+            flex justify-center rounded-lg text-center ml-3  sm:ml-10"
             >
               <a href="#" className=" text-white">
                 <h3 className="font-bold text-3xl">15</h3>
@@ -151,8 +151,8 @@ export default function Section2() {
           <div className="relative">
             <img src={singleBlog4} alt="" className="" />
             <div
-              className="px-8 py-5 h-auto bg-emerald-700 absolute -bottom-5
-            flex justify-center rounded-lg text-center ml-10"
+              className="px-6 sm:px-8 py-2 sm:py-5 h-auto bg-emerald-700 absolute -bottom-5
+            flex justify-center rounded-lg text-center ml-3  sm:ml-10"
             >
               <a href="#" className=" text-white">
                 <h3 className="font-bold text-3xl">15</h3>
@@ -192,8 +192,8 @@ export default function Section2() {
           <div className="relative">
             <img src={singleBlog5} alt="" className="" />
             <div
-              className="px-8 py-5 h-auto bg-emerald-700 absolute -bottom-5
-            flex justify-center rounded-lg text-center ml-10"
+              className="px-6 sm:px-8 py-2 sm:py-5 h-auto bg-emerald-700 absolute -bottom-5
+            flex justify-center rounded-lg text-center ml-3  sm:ml-10"
             >
               <a href="#" className=" text-white">
                 <h3 className="font-bold text-3xl">15</h3>
@@ -230,20 +230,22 @@ export default function Section2() {
         </div>
 
         <Pagination />
+        <div className="h-10 sm:hidden"></div>
       </div>
 
       {/* ------ right side ---------- */}
-      <div className="col-span-4 flex flex-col">
+      <div className="sm:col-span-4 sm:flex sm:flex-col mt-10 sm:mt-0 mx-auto">
         {/* ---- input componenet ------- */}
-        <div className="flex h-24 bg-gray-50 py-3 px-9 items-center">
+        <div
+          className="flex justify-center h-24 bg-gray-50 mx-auto 
+        sm:px-3 py-3 items-center"
+        >
           <input
             type="text"
             placeholder="Search keyword"
             className="p-3 border h-12"
           />
-          <button className="bg-green-800 p-3 h-12">
-            <img src={sendButton} alt="send button" className="h-full" />
-          </button>
+          <button className="bg-green-800 p-3 h-12 text-white">Search</button>
         </div>
         <div className="h-5" /> {/*div for height */}
         <div className="h-auto bg-gray-50 p-9">
@@ -321,7 +323,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                  hover:text-white hover:bg-emerald-700"
                 >
                   project
                 </a>
@@ -330,7 +333,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500
+                   hover:text-white hover:bg-emerald-700"
                 >
                   love
                 </a>
@@ -338,7 +342,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   technology
                 </a>
@@ -346,7 +351,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   travel
                 </a>
@@ -355,7 +361,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   resturant
                 </a>
@@ -363,7 +370,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   lifestyle
                 </a>
@@ -371,7 +379,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500 hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500
+                   hover:text-white hover:bg-emerald-700"
                 >
                   design
                 </a>
@@ -379,7 +388,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-5 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-5 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   illustration
                 </a>
@@ -393,7 +403,7 @@ export default function Section2() {
           <h2 className="font-bold text-gray-600 border-b pb-3">
             Instagram Feed
           </h2>
-          <div className="pt-9 grid grid-cols-3 gap-3">
+          <div className="pt-9 grid grid-cols-3 mx-auto ml-5 sm:ml-0 gap-3">
             <img src={post5} alt="" />
             <img src={post6} alt="" />
             <img src={post7} alt="" />

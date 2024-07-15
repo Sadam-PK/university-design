@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import singleBlog1 from "../../../assets/single_blog_1.jpg.webp";
 import { faComment, faUser } from "@fortawesome/free-regular-svg-icons";
-import sendButton from "../../../assets/Icon-send.svg";
 import post1 from "../../../assets/post_1.jpg.webp";
 import post2 from "../../../assets/post_2.jpg.webp";
 import post3 from "../../../assets/post_3.jpg.webp";
@@ -28,23 +27,25 @@ import {
 
 export default function Section2() {
   return (
-    <div className="grid grid-cols-12 px-28 py-20 gap-10">
+    <div className="sm:grid sm:grid-cols-12 sm:px-28 py-20 sm:gap-10">
       {/* ------ left side ---------- */}
 
-      <div className="col-span-8 -z-10">
-        <div className="col-span-8">
+      <div className="sm:col-span-8 -z-10">
+        <div className="sm:col-span-8">
           <div className="relative">
             <img src={singleBlog1} alt="" className="" />
           </div>
-
-          <div className="py-5">
+          <div className="py-5 px-5 sm:px-0">
             <a href="#">
-              <h2 className="py-5 font-bold text-2xl text-gray-800">
+              <h2 className="py-5 font-bold text-lg sm:text-2xl text-gray-800">
                 Second divided from form fish beast made every of seas all
                 gathered us saying he our
               </h2>
 
-              <ul className="flex flex-row items-center gap-2 py-5 text-gray-500 text-sm">
+              <ul
+                className="flex flex-row items-center gap-2 py-5
+               text-gray-500 text-sm"
+              >
                 <li>
                   <FontAwesomeIcon icon={faUser} />
                 </li>
@@ -77,39 +78,43 @@ export default function Section2() {
         </div>
 
         {/* ------- quote div ------- */}
-
-        <div className="bg-gray-100 p-5">
-          <blockquote className="p-5 bg-white italic text-gray-600 border-l-2 border-gray-400">
-            MCSE boot camps have its supporters and its detractors. Some people
-            do not understand why you should have to spend money on boot camp
-            when you can get the MCSE study materials yourself at a fraction of
-            the camp price. However, who has the willpower to actually sit
-            through a self-imposed MCSE training.
-          </blockquote>
-        </div>
-        <div className="py-5 font-semibold border-b border-gray-200">
-          <p className="leading-loose text-gray-600">
-            MCSE boot camps have its supporters and its detractors. Some people
-            do not understand why you should have to spend money on boot camp
-            when you can get the MCSE study materials yourself at a fraction of
-            the camp price. However, who has the willpower
-          </p>
-          <p className="leading-loose text-gray-600 pt-5">
-            MCSE boot camps have its supporters and its detractors. Some people
-            do not understand why you should have to spend money on boot camp
-            when you can get the MCSE study materials yourself at a fraction of
-            the camp price. However, who has the willpower to actually sit
-            through a self-imposed MCSE training. who has the willpower to
-            actually.
-          </p>
+        <div className="sm:px-0 px-5">
+          <div className="bg-gray-100 p-5">
+            <blockquote
+              className="p-5 bg-white italic leading-loose
+             text-gray-600 border-l-2 border-gray-400"
+            >
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction of the camp price. However, who has the willpower to
+              actually sit through a self-imposed MCSE training.
+            </blockquote>
+          </div>
+          <div className="py-5 border-b border-gray-200">
+            <p className="leading-loose text-gray-600">
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction of the camp price. However, who has the willpower
+            </p>
+            <p className="leading-loose text-gray-600 pt-5">
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction of the camp price. However, who has the willpower to
+              actually sit through a self-imposed MCSE training. who has the
+              willpower to actually.
+            </p>
+          </div>
         </div>
         {/* ----------soical---------- */}
 
         <div>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
             <a href="#">
               <ul
-                className="flex flex-row items-center gap-2 py-5
+                className="flex  sm:flex-row items-center gap-2 py-5
                text-gray-500 text-sm"
               >
                 <li>
@@ -122,7 +127,7 @@ export default function Section2() {
                 </li>
               </ul>
             </a>
-            <ul className="flex flex-row space-x-5 py-5 text-gray-500">
+            <ul className="flex sm:flex-row space-x-5 sm:py-5 text-gray-500">
               <li className="text-xl">
                 <a href="#">
                   <FontAwesomeIcon icon={faFacebook} />
@@ -150,10 +155,13 @@ export default function Section2() {
           </div> */}
         </div>
 
-        {/* ----------prev next---------- */}
+        {/* ----------next - prev---------- */}
 
-        <div className="flex flex-row justify-between border-b py-10">
-          <div className="flex flex-row items-center">
+        <div
+          className="flex flex-col sm:flex-row sm:justify-between
+         border-b py-10 px-3"
+        >
+          <div className="flex flex-row items-center mb-10 sm:mb-0">
             <img src={next} alt="" />
 
             <div className="pl-3">
@@ -166,7 +174,7 @@ export default function Section2() {
             </div>
           </div>
 
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row justify-end items-center">
             <div className="pr-3 text-right">
               <h2>Prev Post</h2>
               <a href="#">
@@ -181,12 +189,12 @@ export default function Section2() {
 
         {/* ---------author---------- */}
 
-        <div className="flex flex-row justify-between border-b py-10">
-          <div className="flex flex-row items-center p-10 bg-gray-50">
-            <img src={author} alt="" className="rounded-full" />
+        <div className="flex flex-row justify-between border-b sm:py-10">
+          <div className="flex flex-row items-center py-10 pl-2 sm:p-10 bg-gray-50">
+            <img src={author} alt="" className="rounded-full w-14 sm:w-auto" />
             <span className="pl-5">
               <h2 className="font-semibold">Harward Milan</h2>
-              <p className="text-gray-500 font-semibold">
+              <p className="text-gray-500 leading-tight sm:leading-6">
                 Second divided from form fish beast made. Every of seas all
                 gathered use saying you're, he our dominion twon Second divided
                 from
@@ -197,76 +205,86 @@ export default function Section2() {
 
         {/* ---------comments---------- */}
 
-        <div className="border-b py-10">
-          <p className="font-semibold">05 Comments</p>
+        <div className="border-b py-10 px-3">
+          <p className="font-semibold text-gray-600">05 Comments</p>
           <div className="flex py-10 h-auto">
-            <img src={comment1} alt="" className="rounded-full" />
+            <img
+              src={comment1}
+              alt=""
+              className="rounded-full h-20 sm:h-full"
+            />
             <div className="pl-5">
               <span className=" flex flex-row items-center ">
-                <p className="text-gray-500 font-semibold">
+                <p className="text-gray-500 sm:font-semibold sm:leading-loose leading-tight">
                   Second divided from form fish beast made. Every of seas all
                   gathered use saying you're, he our dominion twon Second
                   divided from
                 </p>
               </span>
               <div className="flex flex-row justify-between">
-                <span className="flex flex-row gap-3">
+                <span className="flex flex-row gap-3 text-sm py-3">
                   <h2 className="font-semibold">Emilly Blunt</h2>
-                  <ul className="flex flex-row gap-5">
+                  <ul className="flex flex-row text-gray-500 ">
                     <li>December 4, 2017 at 3:12 pm</li>
                   </ul>
                 </span>
-                <span className="hover:text-emerald-700">
+                <span className="hover:text-emerald-700 py-2 px-2">
                   <a href="#">REPLY</a>
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="flex py-10">
-            <img src={comment2} alt="" className="rounded-full" />
-
+          <div className="flex py-10 h-auto">
+            <img
+              src={comment2}
+              alt=""
+              className="rounded-full h-20 sm:h-full"
+            />
             <div className="pl-5">
               <span className=" flex flex-row items-center ">
-                <p className="text-gray-500 font-semibold">
+                <p className="text-gray-500 sm:font-semibold sm:leading-loose leading-tight">
                   Second divided from form fish beast made. Every of seas all
                   gathered use saying you're, he our dominion twon Second
                   divided from
                 </p>
               </span>
               <div className="flex flex-row justify-between">
-                <span className="flex flex-row gap-3">
+                <span className="flex flex-row gap-3 text-sm py-3">
                   <h2 className="font-semibold">Emilly Blunt</h2>
-                  <ul className="flex flex-row gap-5 text-gray-500">
+                  <ul className="flex flex-row text-gray-500 ">
                     <li>December 4, 2017 at 3:12 pm</li>
                   </ul>
                 </span>
-                <span className="hover:text-emerald-700">
+                <span className="hover:text-emerald-700 py-2 px-2">
                   <a href="#">REPLY</a>
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="flex py-10">
-            <img src={comment3} alt="" className="rounded-full" />
-
+          <div className="flex py-10 h-auto">
+            <img
+              src={comment3}
+              alt=""
+              className="rounded-full h-20 sm:h-full"
+            />
             <div className="pl-5">
               <span className=" flex flex-row items-center ">
-                <p className="text-gray-500 font-semibold">
+                <p className="text-gray-500 sm:font-semibold sm:leading-loose leading-tight">
                   Second divided from form fish beast made. Every of seas all
                   gathered use saying you're, he our dominion twon Second
                   divided from
                 </p>
               </span>
               <div className="flex flex-row justify-between">
-                <span className="flex flex-row gap-3">
+                <span className="flex flex-row gap-3 text-sm py-3">
                   <h2 className="font-semibold">Emilly Blunt</h2>
-                  <ul className="flex flex-row gap-5 text-gray-500">
+                  <ul className="flex flex-row text-gray-500 ">
                     <li>December 4, 2017 at 3:12 pm</li>
                   </ul>
                 </span>
-                <span className="hover:text-emerald-700">
+                <span className="hover:text-emerald-700 py-2 px-2">
                   <a href="#">REPLY</a>
                 </span>
               </div>
@@ -274,64 +292,122 @@ export default function Section2() {
           </div>
         </div>
 
-        {/* ---------REPLY---------- */}
+        {/* ---------REPLY web view---------- */}
 
-        <div
-          className="sm: p-10 sm:mr-10 
-          text-gray-500 font-light mb-14 sm:block hidden"
-        >
-          <div className="flex flex-col py-2">
-            <textarea
-              type="textarea"
-              className="border p-3 h-40 mb-2"
-              placeholder="Write Comment"
-            />
-          </div>
+        <div className="sm:block hidden">
+          <h2 className="px-10 pt-10 font-bold text-gray-600">Leave a Reply</h2>
+          <div
+            className="sm: p-10 sm:mr-10 
+          text-gray-500 font-light mb-14"
+          >
+            <div className="flex flex-col py-2">
+              <textarea
+                type="textarea"
+                className="border p-3 h-40 mb-2"
+                placeholder="Write Comment"
+              />
+            </div>
 
-          <div className="flex flex-row py-2 w-auto">
-            <input
-              type="text"
-              className="border p-3 w-1/2 mr-2"
-              placeholder="Name"
-            />
-            <input
-              type="text"
-              className="border p-3 w-1/2 ml-2"
-              placeholder="Email"
-            />
-          </div>
+            <div className="flex flex-row py-2 w-auto">
+              <input
+                type="text"
+                className="border p-3 w-1/2 mr-2"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                className="border p-3 w-1/2 ml-2"
+                placeholder="Email"
+              />
+            </div>
 
-          <div className="flex flex-col py-2">
-            <input
-              type="text"
-              className="border  p-3"
-              placeholder="Website"
-            />
-          </div>
+            <div className="flex flex-col py-2">
+              <input
+                type="text"
+                className="border  p-3"
+                placeholder="Website"
+              />
+            </div>
 
-          <button
-            className=" h-auto border-2 border-emerald-600  sm:border p-3 
+            <button
+              className=" h-auto border-2 border-emerald-600  sm:border p-3 
              hover:bg-white text-sm 
           hover:text-black  sm:mt-5 text-emerald-600 border-solid 
            font-mukta"
+            >
+              POST COMMENT
+            </button>
+          </div>
+        </div>
+
+        {/* ------ reply mob view ---------- */}
+
+        <div className="sm:hidden block">
+          <h2 className="px-10 pt-10 font-bold text-gray-600">Leave a Reply</h2>
+          <div
+            className="sm: p-10 sm:mr-10 
+          text-gray-500 font-light mb-14"
           >
-            POST COMMENT
-          </button>
+            <div className="flex flex-col py-2">
+              <textarea
+                type="textarea"
+                className="border p-3 h-40 mb-2"
+                placeholder="Write Comment"
+              />
+            </div>
+
+            <div className="flex flex-row py-2 w-auto">
+              <input
+                type="text"
+                className="border p-3 w-full"
+                placeholder="Name"
+              />
+            </div>
+
+            <div className="flex flex-row py-2 w-auto">
+              <input
+                type="text"
+                className="border p-3 w-full"
+                placeholder="Email"
+              />
+            </div>
+
+            <div className="flex flex-col py-2">
+              <input
+                type="text"
+                className="border  p-3"
+                placeholder="Website"
+              />
+            </div>
+
+            <button
+              className=" h-auto border-2 border-emerald-600 mt-3 sm:border p-3 
+             hover:bg-white text-sm 
+          hover:text-black  sm:mt-5 text-emerald-600 border-solid 
+           font-mukta"
+            >
+              POST COMMENT
+            </button>
+          </div>
         </div>
       </div>
 
       {/* ------ right side ---------- */}
-      <div className="col-span-4 flex flex-col">
+      <div
+        className="sm:col-span-4 sm:flex sm:flex-col 
+      mt-10 sm:mt-0 mx-auto"
+      >
         {/* ---- input componenet ------- */}
-        <div className="flex h-24 bg-gray-50 py-3 px-9 items-center">
+        <div
+          className="flex justify-center h-24 bg-gray-50 mx-auto 
+        sm:px-3 py-3 items-center"
+        >
           <input
             type="text"
             placeholder="Search keyword"
             className="p-3 border h-12"
           />
-          <button className="bg-green-800 p-3 h-12">
-            <img src={sendButton} alt="send button" className="h-full" />
-          </button>
+          <button className="bg-green-800 p-3 h-12 text-white">Search</button>
         </div>
         <div className="h-5" /> {/*div for height */}
         <div className="h-auto bg-gray-50 p-9">
@@ -409,7 +485,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                  hover:text-white hover:bg-emerald-700"
                 >
                   project
                 </a>
@@ -418,7 +495,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500
+                   hover:text-white hover:bg-emerald-700"
                 >
                   love
                 </a>
@@ -426,7 +504,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   technology
                 </a>
@@ -434,7 +513,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   travel
                 </a>
@@ -443,7 +523,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   resturant
                 </a>
@@ -451,7 +532,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   lifestyle
                 </a>
@@ -459,7 +541,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-3 py-1 bg-white border text-gray-500 hover:text-white hover:bg-emerald-700"
+                  className="px-3 py-1 bg-white border text-gray-500
+                   hover:text-white hover:bg-emerald-700"
                 >
                   design
                 </a>
@@ -467,7 +550,8 @@ export default function Section2() {
               <li>
                 <a
                   href="#"
-                  className="px-5 py-1 bg-white border text-gray-500  hover:text-white hover:bg-emerald-700"
+                  className="px-5 py-1 bg-white border text-gray-500 
+                   hover:text-white hover:bg-emerald-700"
                 >
                   illustration
                 </a>
@@ -481,7 +565,7 @@ export default function Section2() {
           <h2 className="font-bold text-gray-600 border-b pb-3">
             Instagram Feed
           </h2>
-          <div className="pt-9 grid grid-cols-3 gap-3">
+          <div className="pt-9 grid grid-cols-3 mx-auto ml-5 sm:ml-0 gap-3">
             <img src={post5} alt="" />
             <img src={post6} alt="" />
             <img src={post7} alt="" />

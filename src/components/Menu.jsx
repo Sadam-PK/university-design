@@ -23,13 +23,41 @@ export default function Menu() {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute right-0 mt-4 w-40
+          className="origin-top-right absolute right-0 mt-4 w-48
             shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
         >
           <div className="py-1" role="none">
+            <a
+              href="/"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              role="menuitem"
+            >
+              Home
+            </a>
+            <a
+              href="/about"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              role="menuitem"
+            >
+              About
+            </a>
+            <a
+              href="/programs"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              role="menuitem"
+            >
+              Programs
+            </a>
+            <a
+              href="/contact"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              role="menuitem"
+            >
+              Contact
+            </a>
             <a
               href="/blog"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -44,13 +72,13 @@ export default function Menu() {
             >
               Blog Details
             </a>
-            <a
-              href="/elements"
+            {/* <a
+              href="/"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               role="menuitem"
             >
               Elements
-            </a>
+            </a> */}
           </div>
         </div>
       )}

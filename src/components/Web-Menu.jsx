@@ -27,7 +27,7 @@ export default function WebMenu() {
               </a>
               {isOpen && (
                 <div
-                  className="absolute top-11 w-28 bg-white z-50"
+                  className="absolute top-11 w-32 bg-white  z-50"
                   role="menu"
                   onMouseEnter={() => setIsOpen(true)}
                   onMouseLeave={() => setIsOpen(false)}
@@ -36,7 +36,7 @@ export default function WebMenu() {
                     <a
                       href="/blog/"
                       className="block px-4 py-2 text-sm
-                       text-gray-700 hover:bg-gray-100
+                       text-gray-500 hover:bg-gray-100
                         hover:text-emerald-700"
                       role="menuitem"
                     >
@@ -44,7 +44,7 @@ export default function WebMenu() {
                     </a>
                     <a
                       href="/blogdetails"
-                      className="block px-4 py-2 text-sm text-gray-700
+                      className="block px-4 py-2 text-sm text-gray-500
                        hover:bg-gray-100  hover:text-emerald-700"
                       role="menuitem"
                     >
@@ -52,7 +52,7 @@ export default function WebMenu() {
                     </a>
                     <a
                       href="/blogdetails"
-                      className="block px-4 py-2 text-sm text-gray-700
+                      className="block px-4 py-2 text-sm text-gray-500
                        hover:bg-gray-100  hover:text-emerald-700"
                       role="menuitem"
                     >

@@ -12,9 +12,11 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
-    <div className="bg-gray-700 flex flex-col items-center p-3 py-20 sm:px-32">
-      <div className="grid sm:grid-cols-12 gap-2 text-gray-300 py-5 border-b border-gray-500">
-
+    <div className="bg-gray-700 flex flex-col px-5 p-3 py-20 sm:px-32">
+      <div
+        className="grid sm:grid-cols-12 gap-2 text-gray-300 py-5 border-b
+       border-gray-500"
+      >
         <div className="col-span-3">
           <img src={universityLogo} alt="" />
         </div>
@@ -54,20 +56,24 @@ export default function Footer() {
             <p className="py-4">Subscribe newsletter to get updates.</p>
           </div>
 
-          <div className="flex flex-row items-center bg-emerald-700">
-            <div>
+          <div className="flex flex-row items-center">
+            <div className="">
               <input
                 type="text"
                 placeholder="Enter your email"
                 className="p-3 w-full"
               />
             </div>
-            <div className="w-20 flex sm:flex-row justify-center">
+            <div
+              className="flex flex-row justify-center items-center w-14 h-12
+             bg-emerald-700"
+            >
               <button>
-                <img src={sendButton} alt="send button" className="" />
+                <img src={sendButton} alt="send button" />
               </button>
             </div>
           </div>
+
           <div className="text-white">
             <ul className="flex flex-row space-x-5 py-5">
               <li className="text-xl">
