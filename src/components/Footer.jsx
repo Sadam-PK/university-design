@@ -108,10 +108,10 @@ export default function Footer() {
          py-8 text-center"
       >
         <p className="text-gray-300 pt-8">
-          Copyright ©2024 All rights reserved | This template is made with{" "}
+          Copyright ©2024 All rights reserved | Made with{" "}
           <FontAwesomeIcon icon={faHeart} className="text-emerald-700" /> by{" "}
           <a href="#" className="text-emerald-600">
-            Colorlib
+            Sadam
           </a>
         </p>
       </div>
