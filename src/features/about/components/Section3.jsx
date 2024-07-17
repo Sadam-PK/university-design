@@ -5,8 +5,8 @@ export default function Section3() {
   return (
     <div className="sm:flex sm:flex-row py-0 sm:py-0">
       {/* ---------- left side of section */}
-      <div className="px-5 sm:px-10 p-10 sm:py-0 sm:px-30 w-full bg-gray-50">
-        <h2 className="py-7 font-bold text-xl sm:text-4xl text-gray-800">
+      <div className="px-5 sm:px-10 p-10 sm:py-0 sm:px-30 w-full bg-gray-50 mb-10 sm:my-0">
+        <h2 className="py-7 font-bold text-xl sm:text-4xl text-gray-600">
           ESSENTIAL RESOURCES
         </h2>
         <p className="text-lg text-gray-500">
@@ -22,8 +22,8 @@ export default function Section3() {
          hover:bg-emerald-100 hover:border-transparent group items-center"
         >
           <div className="flex flex-col">
-            <h2 className="font-bold">First year students</h2>
-            <p className="py-3">
+            <h2 className="font-bold text-gray-600">First year students</h2>
+            <p className="py-3 text-gray-500">
               Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
               vitae tincidunt mi, et malesuada massa.
             </p>
@@ -61,8 +61,8 @@ export default function Section3() {
          hover:bg-emerald-100 hover:border-transparent group items-center"
         >
           <div className="flex flex-col">
-            <h2 className="font-bold">Tuition & fees</h2>
-            <p className="py-3">
+            <h2 className="font-bold text-gray-600">Tuition & fees</h2>
+            <p className="py-3 text-gray-500">
               Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
               vitae tincidunt mi, et malesuada massa.
             </p>
@@ -100,8 +100,8 @@ export default function Section3() {
          hover:bg-emerald-100 hover:border-transparent group items-center"
         >
           <div className="flex flex-col">
-            <h2 className="font-bold">International students</h2>
-            <p className="py-3">
+            <h2 className="font-bold text-gray-600">International students</h2>
+            <p className="py-3 text-gray-500">
               Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
               vitae tincidunt mi, et malesuada massa.
             </p>

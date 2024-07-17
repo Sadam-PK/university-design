@@ -12,7 +12,7 @@ export default function Section4() {
         </a>
       </div>
       <div
-        className="flex flex-col sm:flex-row gap-5 sm:text-2xl text-center
+        className="flex flex-col sm:flex-row gap-5 sm:text-xl text-center
        text-gray-800"
       >
         <div>

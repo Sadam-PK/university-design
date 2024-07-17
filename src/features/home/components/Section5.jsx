@@ -11,8 +11,9 @@ export default function Section5() {
           More Stories
         </a>
       </div>
+      {/* ------- mini divs -------- */}
       <div
-        className="flex flex-col sm:flex-row gap-5 sm:text-2xl text-center
+        className="flex flex-col sm:flex-row gap-5 sm:text-xl text-center
        text-gray-800"
       >
         <div>
